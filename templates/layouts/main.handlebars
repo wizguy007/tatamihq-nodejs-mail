@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    {{> header}} <!-- Include header partial -->
-    
-    {{{body}}}  <!-- This is where the body of the email goes -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      body {
+        font-family: "Instrument Sans", sans-serif;
+        background-color: #f5f5f5;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .content img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      .content p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .body-text {
+        color: #6a7868;
+      }
+      .footer a {
+        text-decoration: none;
+        color: initial;
+      }
+    </style>
+  </head>
 
-    {{> footer}} <!-- Include footer partial -->
+  <body>
+    <div class="container" style="max-width: 600px; margin: 0 auto; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      <div style="padding: 20px;">
+        {{> header}} <!-- Include header partial -->
+        
+        {{{body}}}  <!-- This is where the body of the email goes -->
+      </div>
+
+      {{> footer}} <!-- Include footer partial -->
+    </div>
   </body>
 </html>

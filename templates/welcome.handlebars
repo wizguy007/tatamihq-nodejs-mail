@@ -1,2 +1,27 @@
-<p>Hello, {{name}}!</p>
-<p>{{message}}</p>
+<div class="content">
+  <img
+    src="https://res.cloudinary.com/musonant/image/upload/v1728975606/Tatami/welcome-email-banner_pbssvu.jpg"
+    alt="Invitation Image"
+  />
+  <p class="body-text">Hi {{name}},</p>
+
+  <div class="body-text">
+    <p>
+      Welcome to Tatami! We're excited to have you on board. Managing your
+      rent has never been easier - from viewing your payment history to
+      staying on top of rent due dates, everything you need is just a
+      click away.
+    </p>
+    <p>
+      Ready to get started? Log in to your account and explore all the
+      features Tatami has to offer.
+    </p>
+    <p>We're thrilled to have you as part of the Tatami community!</p>
+  </div>
+
+  <div class="button action-btn" style="display: block; width: 100%; text-align: center; margin: 20px 0; margin-top: 50px; margin-bottom: 50px;">
+    <a href="{{loginUrl}}" style="background-color: #2d3b2d; color: #ffffff; text-decoration: none; padding: 15px 20px; border-radius: 5px; font-size: 16px; display: block;">
+      Log in
+    </a>
+  </div>
+</div>
