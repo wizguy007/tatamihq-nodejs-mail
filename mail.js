@@ -37,14 +37,14 @@ const mailOptions = {
     address: process.env.MAIL_FROM_ADDRESS,
   },
   to: 'mrmusonant@gmail.com',
-  subject: 'Test Email with Handlebars Template',
-  template: 'welcome', // name of the template file (without extension)
+  subject: 'Wallet Details Updated',
+  template: 'wallet-details-updated', // name of the template file (without extension)
   context: {
-    title: 'Welcome to Tatami',
-    heading: 'Welcome to Tatami',
-    name: 'John',
-    // message: "This is a test email using Handlebars template engine.",
-    loginUrl: '#',
+    title: 'Wallet Details Updated',
+    name: 'Fatima',
+    heading: 'Wallet Details Updated',
+    accountLastFourDigits: '4422',
+    contactUsUrl: 'https://tatamihq.com',
   },
 };
 
