@@ -1,0 +1,32 @@
+{{!-- 
+Fields:
+- title
+- heading
+- name
+- landlordName
+- addressLine
+- building,
+- city
+- country
+--}}
+
+<div class="content">
+  <p class="body-text">Hi {{name}},</p>
+
+  <div class="body-text">
+    <p>
+      We wanted to inform you that your apartment details have been updated by your landlord, {{landlordName}}. Your new apartment information is as follows:
+    </p>
+    
+    <span style="font-weight: bold; font-size: 16px;">New Apartment Address:</span>
+    <div style="font-size: 16px;">
+      <span style="display:block;">{{addressLine}}</span>
+      <span style="display:block;">{{building}}</span>
+      <span style="display:block;">{{city}}, {{country}}</span>
+    </div>
+
+    <p>
+      If you did not request this change or believe there's been a mistake, please contact our support team immediately.
+    </p>
+  </div>
+</div>

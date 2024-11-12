@@ -1,0 +1,21 @@
+{{!-- 
+Fields:
+- title
+- heading
+- name
+- accountLastFourDigits
+- contactUsUrl
+--}}
+
+<div class="content">
+  <p class="body-text">Hi {{name}},</p>
+
+  <div class="body-text">
+    <p>
+      Your bank account ending in <b>{{accountLastFourDigits}}</b> has been successfully linked to your Tatami wallet. Your withdrawals will now be remitted into this bank account.
+    </p>
+    <p>
+      If you did not authorize this change, please <a href="{{contactUsUrl}}" style="color: #6a7868;">reach out to us</a> right away for assistance.
+    </p>
+  </div>
+</div>

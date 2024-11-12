@@ -1,0 +1,24 @@
+{{!-- 
+Fields:
+- title
+- heading
+- code
+- ctaUrl
+--}}
+
+<div class="content">
+  <p class="body-text">Here's your verification code. Enter it in the browser to complete your sign-up or click on the verify email address button below</p>
+
+  <div style="text-align: center;">
+    <h1 style="background-color: #F0FEF7; color: #1B2919; display: inline-block; margin-left: auto; margin-right: auto; padding: 30px 30px; font-size: 40px; letter-spacing: 10px;">{{code}}</h1>
+  </div>
+
+  <div class="button action-btn" style="display: block; width: 100%; text-align: center; margin: 20px 0; margin-top: 50px; margin-bottom: 50px;">
+    <a href="{{ctaUrl}}" style="background-color: #2d3b2d; color: #ffffff; text-decoration: none; padding: 15px 20px; border-radius: 5px; font-size: 16px; display: block;">
+      Verify email address
+    </a>
+
+    <p class="body-text">If you didn't request this email, there's nothing to worry about — please ignore</p>
+  </div>
+
+</div>

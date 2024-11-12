@@ -1,0 +1,34 @@
+{{!-- 
+Fields:
+- title
+- heading
+- name
+- landlordName
+- address
+- amountPaid
+- paymentDate
+- transactionId
+- nextDueDate
+--}}
+
+<div class="content">
+  <p class="body-text">Hi {{name}},</p>
+
+  <div class="body-text">
+    <p>
+      Great news! Your landlord, <b>{{landlordName}}</b> successfully received your rent payment for {{address}}.
+    </p>
+    <p>Payment Details:</p>
+    
+    <div style="font-weight: bold;">
+      <span style="display:block;">Amount Paid: {{amountPaid}}</span>
+      <span style="display:block;">Payment Date: {{paymentDate}}</span>
+      <span style="display:block;">Transaction ID: {{transactionId}}</span>
+      <span style="display:block;">Next Rent Due Date: {{nextDueDate}}</span>
+    </div>
+
+    <p>
+      If you have any questions or notice any discrepancies, please reach out to our support team.
+    </p>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+{{!-- 
+Fields:
+- title
+- invitedUserName
+- inviterName
+- ctaUrl
+- heading
+--}}
+
+<div class="content">
+  <img
+    src="https://res.cloudinary.com/musonant/image/upload/v1731086991/Tatami/mature-young-intercultural-women-putting-plates-wineglasses-table_1_ltbewp.jpg"
+    alt="Invitation Image"
+  />
+  <p class="body-text">Hi {{invitedUserName}},</p>
+
+  <div class="body-text">
+    <p>
+      Great news! Your landlord, <b>{{inviterName}}</b>, has invited you to join Tatami, a platform designed to make your rent payments and management easier and more convenient.
+    </p>
+    <p>
+      To accept the invite, simply click the button below and you’ll be redirected to sign up and set up your Tatami account.
+    </p>
+  </div>
+
+  <div class="button action-btn" style="display: block; width: 100%; text-align: center; margin: 20px 0; margin-top: 50px; margin-bottom: 50px;">
+    <a href="{{ctaUrl}}" style="background-color: #2d3b2d; color: #ffffff; text-decoration: none; padding: 15px 20px; border-radius: 5px; font-size: 16px; display: block;">
+      Accept Invitation
+    </a>
+  </div>
+</div>
